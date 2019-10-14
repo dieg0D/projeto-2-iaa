@@ -1,0 +1,10 @@
+# family2.kfb
+
+
+diagnostico(leve,leve)
+
+# (febre, dias de febre), manchas na pele, dor muscular (1-3), (dor articulacao [1-3], intensidade
+# da dor articular(leve/moderada/intensa), edema da articulacao), conjuntivite, dor de cabeca, 
+# coceira, hipertrofia, discrasia, acometimento
+
+diagnostico_dengue(([38], [4-7]), [4], )

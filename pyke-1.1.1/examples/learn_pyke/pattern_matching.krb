@@ -1,0 +1,8 @@
+# pattern_matching.krb
+
+knows_pattern_matching
+    use knows_pattern_matching()
+    when
+        python engine.get_ke('questions', 'pat_master').reset()
+        knows_pat_master()
+

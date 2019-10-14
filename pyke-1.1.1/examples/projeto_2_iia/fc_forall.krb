@@ -1,0 +1,12 @@
+# fc_forall.krb
+
+dengue
+    foreach
+        diagnostico.diagnostico($coceira, $h)
+        forall
+            sintoma.sintoma($c, $h)
+        require
+            check $coceira == $c
+    assert
+        python print($coceira, "tá dengoso")
+
