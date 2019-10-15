@@ -7,4 +7,6 @@ diagnostico(leve,leve)
 # da dor articular(leve/moderada/intensa)), edema da articulacao, conjuntivite, dor de cabeca, 
 # coceira, hipertrofia, discrasia, acometimento
 
-diagnostico_dengue(([38], [4-7]), [4], 3, (1, leve), [raro(s/n)], [raro(s/n)], 3, leve, leve, moderada, [raro(s/n)] )
+diagnostico_dengue(38, 4, 4, 3, 1, leve, nao, leve, nao , 3, leve, leve, moderada, nao)
+diagnostico_zika(37, 1, 1, 2, 2, leve, sim, leve, sim , 2, moderada, intensa, ausente, sim)
+diagnostico_chikungunya(38, 2, 2, 1, 3, moderada, sim, moderada, sim, 2, leve, moderada, leve, nao) 

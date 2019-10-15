@@ -1,0 +1,80 @@
+# fc_forall.krb
+
+dengue
+    foreach
+        diagnostico.diagnostico_dengue($febre, $dias_de_febre, $dia_mancha_pele, $dor_muscular, 
+            $dor_articulacao, $intensidade_dor_articulacao, $edema_articulacao, $intensidade_edema, $conjuntivite, 
+            $dor_de_cabeca, $coceira, $hipertrofia, $discrasia, $acometimento)
+        forall
+            sintoma.sintoma($a, $b, $c, $d, $e, $f, $g, $h, $i, $j, $k, $l, $m, $n)
+        require
+            check $a >= $febre
+            check $b in (4,5,6,7)
+            check $c >= $dia_mancha_pele
+            check $d == $dor_muscular
+            check $e == $dor_articulacao
+            check $f == $intensidade_dor_articulacao
+            check $g == $edema_articulacao
+            check $h == $intensidade_edema
+            check $i == $conjuntivite
+            check $j == $dor_de_cabeca
+            check $k == $coceira
+            check $l == $hipertrofia
+            check $m == $discrasia
+            check $n == $acometimento
+    assert
+        python print("Você tem dengue")
+
+
+zika
+    foreach
+        diagnostico.diagnostico_zika($febre, $dias_de_febre, $dia_mancha_pele, $dor_muscular, 
+            $dor_articulacao, $intensidade_dor_articulacao, $edema_articulacao, $intensidade_edema, $conjuntivite, 
+            $dor_de_cabeca, $coceira, $hipertrofia, $discrasia, $acometimento)
+        forall
+           sintoma.sintoma($a, $b, $c, $d, $e, $f, $g, $h, $i, $j, $k, $l, $m, $n)
+        require
+            
+            check $a >= $febre
+            check $b in (1,2)
+            check $c >= $dia_mancha_pele
+            check $d == $dor_muscular
+            check $e == $dor_articulacao
+            check $f == $intensidade_dor_articulacao
+            check $g == $edema_articulacao
+            check $h == $intensidade_edema
+            check $i == $conjuntivite
+            check $j == $dor_de_cabeca
+            check $k == $coceira
+            check $l == $hipertrofia
+            check $m == $discrasia
+            check $n == $acometimento
+    assert
+        python print("Você tem zika")
+
+
+chikungunya
+    foreach
+        diagnostico.diagnostico_chikungunya($febre, $dias_de_febre, $dia_mancha_pele, $dor_muscular, 
+            $dor_articulacao, $intensidade_dor_articulacao, $edema_articulacao, $intensidade_edema, $conjuntivite, 
+            $dor_de_cabeca, $coceira, $hipertrofia, $discrasia, $acometimento)
+        forall
+             sintoma.sintoma($a, $b, $c, $d, $e, $f, $g, $h, $i, $j, $k, $l, $m, $n)
+        require
+            
+            check $a >= $febre
+            check $b in (2, 3, 4, 5)
+            check $c >= $dia_mancha_pele
+            check $d == $dor_muscular
+            check $e == $dor_articulacao
+            check $f == $intensidade_dor_articulacao
+            check $g == $edema_articulacao
+            check $h == $intensidade_edema
+            check $i == $conjuntivite
+            check $j == $dor_de_cabeca
+            check $k == $coceira
+            check $l == $hipertrofia
+            check $m == $discrasia
+            check $n == $acometimento
+    assert
+        python print("Você tem chikungunya")
