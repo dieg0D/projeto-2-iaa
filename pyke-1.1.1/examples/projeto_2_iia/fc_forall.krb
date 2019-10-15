@@ -1,12 +1,19 @@
 # fc_forall.krb
 
+#dengue
+#    foreach
+#        diagnostico.diagnostico($coceira, $h)
+#        forall
+#            sintoma.sintoma($c, $h)
+#        require
+#            check $coceira == $c
+#    assert
+#        python print($coceira, "tá dengoso")
+
 dengue
     foreach
-        diagnostico.diagnostico($coceira, $h)
-        forall
-            sintoma.sintoma($c, $h)
-        require
-            check $coceira == $c
-    assert
-        python print($coceira, "tá dengoso")
-
+        diagnostico.diagnostico_dengue(($febre, $dias_de_febre), $dia_mancha_pele, $dor_muscular, 
+            ($dor_articulacao, $intensidade_dor_articulacao), $edema_articulacao, $conjuntivite, 
+            $dor_de_cabeca, $coceira, $hipertrofia, $discrasia, $acometimento)
+    forall
+        
